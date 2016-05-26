@@ -32,7 +32,7 @@ i2+=1
 
 end until word[i2] == "a" || word[i2] == "e" || word[i2] == "i" || word[i2] == "o" || word[i2] == "u"
 
-words[i] = words[i].gsub!(/#{new_word}/, "") + new_word + "ay"
+words[i] = words[i].sub!(/#{new_word}/, "") + new_word + "ay"
 i+=1
 
 
